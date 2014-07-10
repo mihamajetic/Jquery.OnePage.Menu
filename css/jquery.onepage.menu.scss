@@ -1,0 +1,67 @@
+$color1: #1abc9c;
+$color2: #2ecc71;
+$color3: #3498db;
+$color4: #9b59b6;
+$color5: #e67e22;
+$nav: #34495e;
+$menu-text: #ecf0f1;
+$menu-text-hover: #e67e22;
+
+* {
+ font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+ position: fixed;
+ left:0;
+ right: 0;
+ top: 0;
+ ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   height: 50px;
+   background: $nav;
+   li {
+     float: left;
+     a {
+       display: block;
+       height: 50px;
+       padding: 0 10px;
+       line-height: 50px;
+       text-decoration: none;
+       color: $menu-text;
+     }
+
+     a:hover, .active {
+       background: $menu-text-hover;
+     }
+   }
+ }
+}
+.content {
+ .page {
+   height: 600px;
+   h1 {
+     margin: 0;
+     text-align: center;
+     padding: 50px 0 0 0;
+   }
+ }
+
+ .col1 {
+   background: $color1;
+ }
+ .col2 {
+   background: $color2;
+ }
+ .col3 {
+   background: $color3;
+ }
+ .col4 {
+   background: $color4;
+ }
+ .col5 {
+   background: $color5;
+ }
+}
